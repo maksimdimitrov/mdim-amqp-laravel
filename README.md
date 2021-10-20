@@ -3,6 +3,11 @@
 It is developed for versions greater than Laravel 5.7
 
 ### How to install
+
+#### Option 1 
+Use ```composer require maksimdimitrov/mdim-amqp-laravel```
+
+#### Option 2
 Add to your composer.json file in "require" section:
 
 ```"maksimdimitrov/mdim-amqp-laravel": "dev-master"```
@@ -11,7 +16,10 @@ and in "repositories" section:
 
 ```{ "type": "vcs", "url": "https://github.com/maksimdimitrov/mdim-amqp-laravel.git" }```
 
-Next: ```composer install```, next ```php artisan vendor:publish --tag=mdim_rabbitmq-config``` to publish the config file in config/mdim_rabbitmq.php
+Next: ```composer install``` 
+
+
+Next step is to run ```php artisan vendor:publish --tag=mdim_rabbitmq-config``` to publish the config file in config/mdim_rabbitmq.php
 Check the available commands ```mdim_rabbitmq:publish_hello``` and ```mdim_rabbitmq:start_consumer 'App\SomeConsumers\SomeJob'``` with ```php artisan```
 
 ### The config in config/mdim_rabbitmq.php
