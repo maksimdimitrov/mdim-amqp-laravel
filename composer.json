@@ -1,6 +1,6 @@
 {
     "name": "maksimdimitrov/mdim-amqp-laravel",
-    "description": "Service provider for php-amqplib for Laravel",
+    "description": "Laravel service provider for php-amqplib to use RabbitMQ",
     "keywords": ["rabbitmq", "laravel"],
     "license": "MIT",
     "authors": [
