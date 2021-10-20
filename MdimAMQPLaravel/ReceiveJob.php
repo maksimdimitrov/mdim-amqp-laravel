@@ -18,7 +18,8 @@ abstract class ReceiveJob
     
     abstract public static function getQueueName();
     abstract public static function getConsumerTag();
-    
+    abstract public static function getConnectionName();
+
     /** default parameters for queue, qos, consume methods. check docs for php-amqplib */
     
     /** queue_declare */

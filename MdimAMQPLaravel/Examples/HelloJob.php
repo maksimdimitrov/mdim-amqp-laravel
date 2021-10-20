@@ -16,6 +16,11 @@ class HelloJob extends ReceiveJob
         $this->msg->delivery_info['channel']->basic_ack($this->msg->delivery_info['delivery_tag']);
     }
     
+    public static function getConnectionName()
+    {
+        return 'default';
+    }
+    
     public static function getQueueName()
     {
         return 'example.queue.hello';

@@ -25,7 +25,7 @@ class ReceiveCommand extends Command
         }
 
         app(Package::PREFIX . 'rabbitmq-receiver')
-            ->connection('default')
+            ->connection($class::getConnectionName())
             ->queue(
                 $class::getQueueName(), 
                 $class::getQueuePassiveValue(), 
